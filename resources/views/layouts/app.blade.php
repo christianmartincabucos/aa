@@ -10,13 +10,13 @@
 
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{{ secure_asset('storage/A&A-logo-big-website.jpeg') }}}">
-    <link href="{{{ secure_asset('storage/fonts/gotham.woff2') }}}" rel="stylesheet" type="text/css" />
+    <link href="{{ secure_asset('storage/fonts/Gotham/gotham.woff2') }}" rel="stylesheet" type="text/css" />
 
     <link href="">
     <style>
         @font-face {
             font-family: 'Gothan';
-            src: secure_url('../fonts/Gotham/Gotham-Thin.otf');
+            src: url('../fonts/Gotham/Gotham-Thin.otf');
         }
 
         * {
