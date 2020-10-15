@@ -9,6 +9,7 @@
     <link href="//db.onlinewebfonts.com/c/edc378fa3251080c5b508b220462efca?family=Gotham" rel="stylesheet" type="text/css" />
 
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{{ url('storage/A&A-logo-big-website.jpeg') }}}">
 
     <style>
         @font-face {
