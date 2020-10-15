@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-10 offset-md-1 mt-5">
+            <div class="col-md-10 offset-md-1 mt-5 ml-3">
                 <p class="font-weight-bold">We offer insights regarding customer behavior,market viability <br>
                     of products and services, competitors monitoring, and <br>
                     industry trends. These can be applied to product<br> development, customer service, marketing campaigns, <br>
