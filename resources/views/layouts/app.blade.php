@@ -6,6 +6,7 @@
     <title>{{ config('app.name') }}</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
+    <!-- <link href="//db.onlinewebfonts.com/c/edc378fa3251080c5b508b220462efca?family=Gotham" rel="stylesheet" type="text/css" /> -->
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
 
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
@@ -17,18 +18,7 @@
     <style>
         @font-face {
             font-family: "Gotham";
-            src: secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot");
-            /* IE9*/
-            src: secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot?#iefix") format("embedded-opentype"),
-                /* IE6-IE8 */
-                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff2") format("woff2"),
-                /* chrome firefox */
-                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff") format("woff"),
-                /* chrome firefox */
-                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.ttf") format("truetype"),
-                /* chrome firefox opera Safari, Android, iOS 4.2+*/
-                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.svg#Gotham") format("svg");
-            /* iOS 4.1- */
+            src: 'https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css'
         }
 
         * {
