@@ -41,7 +41,7 @@
             <div class="card mb-0 pb-5 rounded-0" style="background-color:#edecea;">
                 <div class="card-body pl-5 py-5 ml-5 row">
                     <div class="col-md-6">
-                        <p class="h2 text-success my-5">HOW WE WORK</p><br>
+                        <p class="h2 my-5" style="color:#135040;">HOW WE WORK</p><br>
                         <p class="card-text">In-database</p>
                         <p class="card-text font-weight-bolder">Efficient graphs</p>
                         <p class="card-text">Average cost method</p>
