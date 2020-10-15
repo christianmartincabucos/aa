@@ -143,7 +143,6 @@
 
         <script src="{{ secure_asset('js/app.js') }}"></script>
         <script>
-            new WOW().init();
             $.widget.bridge('uibutton', $.ui.button);
             var btn = $('#button');
             $(document).ready(function() {
