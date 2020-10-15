@@ -8,7 +8,7 @@
 
     <link href="//db.onlinewebfonts.com/c/edc378fa3251080c5b508b220462efca?family=Gotham" rel="stylesheet" type="text/css" />
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 
     <style>
         @font-face {
@@ -136,7 +136,7 @@
 
         </div>
 
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ secure_assetasset('js/app.js') }}"></script>
         <script>
             new WOW().init();
             $.widget.bridge('uibutton', $.ui.button);
