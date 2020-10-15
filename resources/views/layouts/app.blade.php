@@ -17,17 +17,17 @@
     <style>
         @font-face {
             font-family: "Gotham";
-            src: url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot");
+            src: secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot");
             /* IE9*/
-            src: url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot?#iefix") format("embedded-opentype"),
+            src: secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot?#iefix") format("embedded-opentype"),
                 /* IE6-IE8 */
-                url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff2") format("woff2"),
+                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff2") format("woff2"),
                 /* chrome firefox */
-                url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff") format("woff"),
+                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff") format("woff"),
                 /* chrome firefox */
-                url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.ttf") format("truetype"),
+                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.ttf") format("truetype"),
                 /* chrome firefox opera Safari, Android, iOS 4.2+*/
-                url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.svg#Gotham") format("svg");
+                secure_url("http://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.svg#Gotham") format("svg");
             /* iOS 4.1- */
         }
 
