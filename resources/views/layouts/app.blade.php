@@ -87,6 +87,24 @@
             opacity: 1;
             visibility: visible;
         }
+
+        .w-42 {
+            width: 42% !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .mobile-ml {
+                margin-left: -0rem !important;
+            }
+
+            .img-about {
+                position: unset !important;
+                width: 100% !important;
+                float: left !important;
+                padding: 0px !important;
+                margin: 0px !important;
+            }
+        }
     </style>
     @stack('css')
 </head>
