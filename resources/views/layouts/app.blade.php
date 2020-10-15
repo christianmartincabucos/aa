@@ -136,7 +136,7 @@
 
         </div>
 
-        <script src="{{ secure_assetasset('js/app.js') }}"></script>
+        <script src="{{ secure_asset('js/app.js') }}"></script>
         <script>
             new WOW().init();
             $.widget.bridge('uibutton', $.ui.button);
