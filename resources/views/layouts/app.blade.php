@@ -6,10 +6,12 @@
     <title>{{ config('app.name') }}</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
-    <link href="//db.onlinewebfonts.com/c/edc378fa3251080c5b508b220462efca?family=Gotham" rel="stylesheet" type="text/css" />
+    <!-- <link href="//db.onlinewebfonts.com/c/edc378fa3251080c5b508b220462efca?family=Gotham" rel="stylesheet" type="text/css" /> -->
 
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link rel="shortcut icon" href="{{{ url('storage/A&A-logo-big-website.jpeg') }}}">
+    <link rel="shortcut icon" href="{{{ secure_asset('storage/A&A-logo-big-website.jpeg') }}}">
+    <link href="{{{ secure_asset('storage/fonts/gotham.woff2') }}}" rel="stylesheet" type="text/css" />
+
     <link href="">
     <style>
         @font-face {
