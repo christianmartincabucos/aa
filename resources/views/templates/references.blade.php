@@ -8,7 +8,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">E-commerce</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/1 E-commerce.jpeg') }}">
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Technology</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/2 Technology.jpeg') }}">
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Service Industries</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/3 Service Industries.jpeg') }}">
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Heavy Industries</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/4 Heavy Industries.jpeg') }}">
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Life Sciences</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/5 Life Sciences.jpeg') }}">
@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Public Sector</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/6 Public Sector.jpeg') }}">
@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Media</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/7 Media.jpeg') }}">
@@ -98,7 +98,7 @@
             </div>
         </div>
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3">
+            <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Retail and Consumer</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/8 Retail and Consumer.jpeg') }}">
