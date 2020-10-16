@@ -27,7 +27,7 @@
     </div>
     <!-- </div> -->
     <div class="row">
-        <div class="col-md-12" id="references">
+        <!-- <div class="col-md-12" id="references">
             <div class="card mb-0 pb-5 rounded-0" style="background-color:#edecea;">
                 <div class="card-body pl-5 py-5 ml-5 row mobile-ml">
                     <div class="col-md-6">
@@ -43,43 +43,8 @@
                 </div>
 
             </div>
-        </div>
-        <div class="col-md-12 col-sm-12" id="about">
-            <div class="card py-0 my-0 rounded-0" style="background-color: #135040;color:#fff;">
-                <div class="d-flex justify-content-end">
-                    <img class="card-img w-50 float-right img-about" src="{{ secure_asset('storage/blake.jpeg') }}" alt="Card image" style="position:relative;margin-top: -28%;">
-                </div>
-                <div class="card-body pl-5 ml-5 pt-0 mt-0 mobile-ml">
-                    <p class="h2 mb-5 mt-0 pt-5">Our team of expert and researchers can<br>
-                        provide premium market intelligence reports<br> and services that will usher success for our<br>
-                        partners
-                    </p>
+        </div> -->
 
-                    <div class="row pb-5 mb-5">
-                        <div class="col-sm-2 pr-4 my-3">
-                            <h4>E-commerce</h4>
-                            <small>When you know your market, you’ve set your business up to lead, innovate and win.</small>
-                        </div>
-                        <div class="col-sm-2 pr-4 my-3">
-                            <h4>Technology</h4>
-                            <small>The New York Times reported that tech companies are currently dominating the stock market because they’ve become an indispensable facet of our everyday lives. </small>
-                        </div>
-                        <div class="col-sm-3 pr-4 my-3">
-                            <h4>Service Industries</h4>
-                            <small>We cater to all types of service-based businesses, from financial services to professional services, and everything in between. </small>
-                        </div>
-                        <div class="col-sm-3 pr-4 my-3">
-                            <h4>Heavy Industries</h4>
-                            <small>Whether your business is engaged in Energy, Manufacturing, Chemicals, Materials, Transportation, or Shipping, we will provide comprehensive findings and significant perspectives that are relevant to your growth strategies. </small>
-                        </div>
-                        <div class="col-sm-2 my-3">
-                            <h4>Life Sciences</h4>
-                            <small>Pharmaceutical and Life Sciences industry succeeds in today’s age of digitalization through the implementation of various IT solutions. </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="col-md-12 col-sm-12">
 
