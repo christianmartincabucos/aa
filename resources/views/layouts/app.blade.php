@@ -15,7 +15,7 @@
     <style>
         @font-face {
             font-family: "Gotham";
-            src: url('{{ secure_asset("fonts/Gotham-Thin.otf" )}}');
+            src: url('{{ asset("fonts/Gotham-Thin.otf" )}}');
             /* src: url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot"); */
             /* IE9*/
             /* src: url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot?#iefix") format("embedded-opentype"), */
