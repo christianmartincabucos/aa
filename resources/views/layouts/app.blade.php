@@ -1597,7 +1597,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Noel<br>
@@ -1637,7 +1637,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Kate<br>
@@ -1676,7 +1676,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Steven<br>
@@ -1715,7 +1715,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Howard<br>
@@ -1754,7 +1754,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Julian<br>
@@ -1793,7 +1793,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -1834,7 +1834,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -1876,7 +1876,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -1917,7 +1917,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -1958,7 +1958,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -1999,7 +1999,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2040,7 +2040,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2081,7 +2081,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2122,7 +2122,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2164,7 +2164,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2205,7 +2205,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2246,7 +2246,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2287,7 +2287,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2328,7 +2328,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2369,7 +2369,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2410,7 +2410,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2452,7 +2452,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2492,7 +2492,7 @@
                                         </div>
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2533,7 +2533,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2574,7 +2574,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2615,7 +2615,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2656,7 +2656,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2697,7 +2697,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2740,7 +2740,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2780,7 +2780,7 @@
                                         </div>
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2821,7 +2821,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2862,7 +2862,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2903,7 +2903,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2944,7 +2944,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -2985,7 +2985,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3029,7 +3029,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3069,7 +3069,7 @@
                                         </div>
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3110,7 +3110,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3151,7 +3151,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3192,7 +3192,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3233,7 +3233,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3274,7 +3274,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3316,7 +3316,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3356,7 +3356,7 @@
                                         </div>
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3397,7 +3397,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3438,7 +3438,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3479,7 +3479,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3520,7 +3520,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3561,7 +3561,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
@@ -3603,7 +3603,7 @@
 
                                         <div class="card-body row " id="page-content">
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
-                                                <div class="ml-5 my-4">
+                                                <div class="ml-5 my-4 mobile-ml">
 
                                                     <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
