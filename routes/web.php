@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('templates.index');
 });
+Route::get('/categories', function () {
+    return view('templates.categories');
+});
 Route::get('/references', function () {
     return view('templates.references');
 });
