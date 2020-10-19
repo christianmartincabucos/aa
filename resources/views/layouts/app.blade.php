@@ -6,12 +6,12 @@
     <title>{{ config('app.name') }}</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/simplePagination.css') }}" rel="stylesheet">
-    <link rel="shortcut icon" href="{{{ secure_asset('storage/A&A-logo-big-website.jpeg') }}}">
-    <link rel="stylesheet" href="{{ secure_asset('admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('admin-lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
-    <!-- <link href="{{ secure_asset('storage/fonts/Gotham/gotham.woff2') }}" rel="stylesheet" type="text/css" /> -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/simplePagination.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{{ asset('storage/A&A-logo-big-website.jpeg') }}}">
+    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <!-- <link href="{{ asset('storage/fonts/Gotham/gotham.woff2') }}" rel="stylesheet" type="text/css" /> -->
 
     <link href="">
     <style>
@@ -94,11 +94,21 @@
         .w-42 {
             width: 42% !important;
         }
-
+        .text-green{
+            color:#135040!important;
+        }
         @media only screen and (max-width: 600px) {
+            .border-left{
+                border: 0!important;
+            }
             .mobile-ml {
                 margin-left: -0rem !important;
                 margin-right: -0rem !important;
+            }
+
+            .mobile-pl {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
             }
 
             .img-about {
@@ -238,7 +248,7 @@
                 </button> -->
                 <a class="navbar-toggler nav-link" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></a>
                 <a href="" class="navbar-brand ml-5">
-                    <img src="{{ secure_asset('storage/A&A-logo-big-website.jpeg') }}" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
+                    <img src="{{ asset('storage/A&A-logo-big-website.jpeg') }}" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
                     <!-- <span class="brand-text font-weight-light"><b>A</b>&<b>A</b></span> -->
                 </a>
 
@@ -279,41 +289,25 @@
                 <section class="content">
                     <div class="container-fluid" id="home">
                         <div class="row">
-                            <div class="col-md-9 offset-md-1" style="margin-top: 2%">
+                            <div class="col-md-8 offset-md-1" style="margin-top: 2%">
                                 <div class="box">
                                     <h3 class="ml-4">Anthony & Associates</h3>
                                     <h4 class="ml-4">Research Market & Development</h4>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     @yield('content')
                     <div class="container-fluid">
                         <div class="row">
                             <div id="about">
-                                <div class="col-md-12" id="references">
-                                    <div class="card mb-0 pb-5 rounded-0" style="background-color:#edecea;">
-                                        <div class="card-body pl-5 py-5 ml-5 row mobile-ml">
-                                            <div class="col-md-6">
-                                                <p class="h2 my-5" style="color:#135040;">HOW WE WORK</p><br>
-                                                <p class="card-text">In-database</p>
-                                                <p class="card-text font-weight-bolder">Efficient graphs</p>
-                                                <p class="card-text">Average cost method</p>
-                                                <p class="card-text">Predict changes with minimal loss</p>
-                                                <p class="card-text">Information specific to the product or needs</p>
-                                            </div>
-                                            <div class="col-md-6 p-0 mx-0">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12" id="about">
+                                <div class="col-md-12 col-sm-12 mt-3" id="">
                                     <div class="card py-0 my-0 rounded-0" style="background-color: #135040;color:#fff;">
                                         <div class="d-flex justify-content-end">
-                                            <img class="card-img w-50 float-right img-about" src="{{ secure_asset('storage/blake.jpeg') }}" alt="Card image" style="position:relative;margin-top: -28%;">
+                                            <img class="card-img w-50 float-right img-about img-about" src="{{ asset('storage/blake.jpeg') }}" alt="Card image" style="position:relative;margin-top: -25%;">
                                         </div>
-                                        <div class="card-body pl-5 ml-5 pt-0 mt-0 mobile-ml">
+                                        <div class="card-body pl-5 ml-5 pt-0 mt-0 mobile-ml mobile-pl">
                                             <p class="h2 mb-5 mt-0 pt-5">Our team of expert and researchers can<br>
                                                 provide premium market intelligence reports<br> and services that will usher success for our<br>
                                                 partners
@@ -354,12 +348,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">Noel<br>
                                                                     <small style="color:#135040;">Entrepreneur (IL)</small>
                                                                 </h6>
@@ -374,12 +368,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">Kate<br>
                                                                     <small style="color:#135040;">Beauty Retailer (CA)</small>
                                                                 </h6>
@@ -395,12 +389,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">Steven<br>
                                                                     <small style="color:#135040;">Computer Hardware Dealer (WI)</small>
                                                                 </h6>
@@ -416,12 +410,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">Howard<br>
                                                                     <small style="color:#135040;">Toy Manufacturer (OH) </small>
                                                                 </h6>
@@ -437,12 +431,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">Julian<br>
                                                                     <small style="color:#135040;">CPA Consultant (CA)</small>
                                                                 </h6>
@@ -459,12 +453,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Owen
                                                                     <br>
@@ -483,12 +477,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Stefen
                                                                     <br>
@@ -507,12 +501,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Joseph
                                                                     <br>
@@ -531,12 +525,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Walter
                                                                     <br>
@@ -555,12 +549,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Amy
                                                                     <br>
@@ -579,12 +573,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Claire
                                                                     <br>
@@ -603,12 +597,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Edward
                                                                     <br>
@@ -627,12 +621,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Manager
                                                                     <br>
@@ -651,12 +645,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Johnathan
                                                                     <br>
@@ -675,12 +669,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Tina
                                                                     <br>
@@ -699,12 +693,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Lisa
                                                                     <br>
@@ -723,12 +717,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     William
                                                                     <br>
@@ -747,12 +741,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Sara
                                                                     <br>
@@ -771,12 +765,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Jackie
                                                                     <br>
@@ -795,12 +789,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Jeff
                                                                     <br>
@@ -819,12 +813,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Martha
                                                                     <br>
@@ -843,12 +837,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Jim
                                                                     <br>
@@ -867,12 +861,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Lianna
                                                                     <br>
@@ -891,12 +885,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Justin
                                                                     <br>
@@ -915,12 +909,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Fred
                                                                     <br>
@@ -939,12 +933,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Kenneth
                                                                     <br>
@@ -963,12 +957,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Jackson
                                                                     <br>
@@ -987,12 +981,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Nelson
                                                                     <br>
@@ -1011,12 +1005,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Adam
                                                                     <br>
@@ -1035,12 +1029,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Karla
                                                                     <br>
@@ -1059,12 +1053,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Stephanie
                                                                     <br>
@@ -1083,12 +1077,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Dominique
                                                                     <br>
@@ -1107,12 +1101,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Thomas
                                                                     <br>
@@ -1131,12 +1125,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Olivia
                                                                     <br>
@@ -1155,12 +1149,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Kristine
                                                                     <br>
@@ -1179,12 +1173,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Collin
                                                                     <br>
@@ -1203,12 +1197,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Greg
                                                                     <br>
@@ -1227,12 +1221,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Alfred
                                                                     <br>
@@ -1251,12 +1245,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Will
                                                                     <br>
@@ -1275,12 +1269,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Tamina
                                                                     <br>
@@ -1299,12 +1293,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Bill
                                                                     <br>
@@ -1323,12 +1317,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Sasha
                                                                     <br>
@@ -1347,12 +1341,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Everly
                                                                     <br>
@@ -1371,12 +1365,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Ralph
                                                                     <br>
@@ -1395,12 +1389,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Morgan
                                                                     <br>
@@ -1419,12 +1413,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Andre
                                                                     <br>
@@ -1443,12 +1437,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Theresa
                                                                     <br>
@@ -1467,12 +1461,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Marvin
                                                                     <br>
@@ -1491,12 +1485,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/john.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Clyde
                                                                     <br>
@@ -1515,12 +1509,12 @@
                                                 <div class="card mb-0 pb-5 rounded-0 " style="background-color:#edecea;">
                                                     <div class="card-body pl-0 row">
                                                         <div class="col-sm-6">
-                                                            <img class="card-img float-left" src="{{ secure_asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
+                                                            <img class="card-img float-left" src="{{ asset('storage/christin.jpeg') }}" alt="Card image" style="position: relative;margin-top: -11%;">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <div class="ml-5 my-4">
 
-                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                                <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                                 <h6 class="d-inline-block align-bottom">
                                                                     Derick
                                                                     <br>
@@ -1558,10 +1552,10 @@
                                         </div>
                                     </div>
                                     <div class="card rounded-0 col-md-3 offset-md-1 shadow-lg p-0">
-                                        <img class="card-img-top" src="{{ secure_asset('storage/austin.jpeg') }}" alt="Card image cap">
+                                        <img class="card-img-top" src="{{ asset('storage/austin.jpeg') }}" alt="Card image cap">
 
                                         <div class="card-body">
-                                            <img class="d-inline rounded-circle" height="20" width="20" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                            <img class="d-inline rounded-circle" height="20" width="20" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                             <small class="d-inline" style="color:#135040;">Michael Moon | Oct 2020</small>
                                             <h5 class="my-4">What's new in the market today? </h5>
                                             <div class="d-flex justify-content-end">
@@ -1570,10 +1564,10 @@
                                         </div>
                                     </div>
                                     <div class="card rounded-0 col-md-3 offset-md-1 shadow-lg p-0">
-                                        <img class="card-img-top" src="{{ secure_asset('storage/profile.JPG') }}" style="height: 53%;" alt="Card image cap">
+                                        <img class="card-img-top" src="{{ asset('storage/profile.JPG') }}" style="height: 53%;" alt="Card image cap">
 
                                         <div class="card-body">
-                                            <img class="d-inline rounded-circle" height="20" width="20" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered=" true">
+                                            <img class="d-inline rounded-circle" height="20" width="20" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered=" true">
                                             <small class="d-inline" style="color:#135040;">Ashley Dunham | Oct 2020</small>
                                             <h5 class="my-4">What's new in the market today? </h5>
                                             <div class="d-flex justify-content-end">
@@ -1585,7 +1579,7 @@
                                 <div class="col-md-9 offset-md-1" style="margin-top: 2%">
                                     <div class="box m-4">
                                         <h3>Let's find what works <br>for you</h3>
-                                        <img height="20" width="100" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                        <img height="20" width="100" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                     </div>
                                 </div>
                             </div>
@@ -1600,7 +1594,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Noel<br>
                                                         <small style="color:#135040;">Entrepreneur (IL)</small>
                                                     </h6>
@@ -1640,7 +1634,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Kate<br>
                                                         <small style="color:#135040;">Beauty Retailer (CA)</small>
                                                     </h6>
@@ -1679,7 +1673,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Steven<br>
                                                         <small style="color:#135040;">Computer Hardware Dealer (WI)</small>
                                                     </h6>
@@ -1718,7 +1712,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Howard<br>
                                                         <small style="color:#135040;">Toy Manufacturer (OH) </small>
                                                     </h6>
@@ -1757,7 +1751,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">Julian<br>
                                                         <small style="color:#135040;">CPA Consultant (CA)</small>
                                                     </h6>
@@ -1796,7 +1790,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Owen
                                                         <br>
@@ -1837,7 +1831,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Stefen
                                                         <br>
@@ -1879,7 +1873,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Joseph
                                                         <br>
@@ -1920,7 +1914,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Walter
                                                         <br>
@@ -1961,7 +1955,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Amy
                                                         <br>
@@ -2002,7 +1996,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Claire
                                                         <br>
@@ -2043,7 +2037,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Edward
                                                         <br>
@@ -2084,7 +2078,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Manager
                                                         <br>
@@ -2125,7 +2119,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Johnathan
                                                         <br>
@@ -2167,7 +2161,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Tina
                                                         <br>
@@ -2208,7 +2202,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Lisa
                                                         <br>
@@ -2249,7 +2243,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         William
                                                         <br>
@@ -2290,7 +2284,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Sara
                                                         <br>
@@ -2331,7 +2325,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Jackie
                                                         <br>
@@ -2372,7 +2366,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Jeff
                                                         <br>
@@ -2413,7 +2407,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Martha
                                                         <br>
@@ -2455,7 +2449,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Jim
                                                         <br>
@@ -2495,7 +2489,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Lianna
                                                         <br>
@@ -2536,7 +2530,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Justin
                                                         <br>
@@ -2577,7 +2571,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Fred
                                                         <br>
@@ -2618,7 +2612,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Kenneth
                                                         <br>
@@ -2659,7 +2653,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Jackson
                                                         <br>
@@ -2700,7 +2694,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Nelson
                                                         <br>
@@ -2743,7 +2737,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Adam
                                                         <br>
@@ -2783,7 +2777,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Karla
                                                         <br>
@@ -2824,7 +2818,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Stephanie
                                                         <br>
@@ -2865,7 +2859,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Dominique
                                                         <br>
@@ -2906,7 +2900,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Thomas
                                                         <br>
@@ -2947,7 +2941,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Olivia
                                                         <br>
@@ -2988,7 +2982,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Kristine
                                                         <br>
@@ -3032,7 +3026,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Collin
                                                         <br>
@@ -3072,7 +3066,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Greg
                                                         <br>
@@ -3113,7 +3107,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Alfred
                                                         <br>
@@ -3154,7 +3148,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Will
                                                         <br>
@@ -3195,7 +3189,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Tamina
                                                         <br>
@@ -3236,7 +3230,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Bill
                                                         <br>
@@ -3277,7 +3271,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Sasha
                                                         <br>
@@ -3319,7 +3313,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Everly
                                                         <br>
@@ -3359,7 +3353,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Ralph
                                                         <br>
@@ -3400,7 +3394,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Morgan
                                                         <br>
@@ -3441,7 +3435,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Andre
                                                         <br>
@@ -3482,7 +3476,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Theresa
                                                         <br>
@@ -3523,7 +3517,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Marvin
                                                         <br>
@@ -3564,7 +3558,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Clyde
                                                         <br>
@@ -3606,7 +3600,7 @@
                                             <div class="col-md-10 offset-md-1 shadow-lg rounded pl-4 pb-5" style="margin-top: 2%;background-color:#ffffff">
                                                 <div class="ml-5 my-4 mobile-ml">
 
-                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
+                                                    <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
                                                     <h6 class="d-inline-block align-bottom">
                                                         Derick
                                                         <br>
@@ -3645,17 +3639,15 @@
 
                                     </div>
 
-                                    <div class="pagination d-flex justify-content-center"></div>
+                                    <div class="mt-5 pagination d-flex justify-content-center"></div>
                                 </div>
                             </div>
                         </div>
                 </section>
             </div>
         </div>
-        <script src="{{ secure_asset('js/app.js') }}"></script>
-        <script src="{{ secure_asset('js/jquery.simplePagination.js') }}"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js'></script>
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/jquery.simplePagination.js') }}"></script>
         <script>
             jQuery(function($) {
                 var items = $("#content #page-content");
