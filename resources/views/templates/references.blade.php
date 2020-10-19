@@ -13,7 +13,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">E-commerce</p><br>
-                <img class="card-img-top" src="{{ asset('storage/1 E-commerce.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/1 E-commerce.jpeg') }}">
                 <p class="MsoNormal mt-2" style="text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12pt;">When you k</span><span style="font-size: 12pt;">now your market</span><span lang="EN-PH" style="font-size: 12pt;">, you&rsquo;ve </span><span style="font-size: 12pt;">set your business</span><span lang="EN-PH" style="font-size: 12pt;"> up</span><span lang="EN-PH" style="font-size: 12pt;"> </span><span lang="EN-PH" style="font-size: 12pt;">to lead, innovate and win</span><span style="font-size: 12pt;">. </span><span lang="EN-PH" style="font-size: 12pt;">With our industry-standard market reports, you&rsquo;ll get an in-depth look at what delights your customers, what advantages you have over your competitors, and what </span><span style="font-size: 12pt;">you can do to capitalize on industry trends.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent1">
@@ -32,7 +32,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Technology</p><br>
-                <img class="card-img-top" src="{{ asset('storage/2 Technology.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/2 Technology.jpeg') }}">
                 <p class="MsoNormal mt-4" style="text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">The </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">New York Times</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> report</span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">ed</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> that </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">tech companies are currently dominating the stock market because they&rsquo;ve become an indispensable facet of our everyday lives.</span><em><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> </span></em><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">We</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">&rsquo;</span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">re here to provide </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">you with </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">valuable </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">market </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">reports </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">on</span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> computer hardware and networking, software, </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">IT, and </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">telecommunications,</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> so your business can capitalize on the monumental opportunities in this industry. </span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent2">
@@ -51,7 +51,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Service Industries</p><br>
-                <img class="card-img-top" src="{{ asset('storage/3 Service Industries.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/3 Service Industries.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">We make sure that our insights can be leveraged to your advantage. We cater to all types of service-based businesses, from financial services to professional services, and everything in between. You can expect premium research </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">reports</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;"> that will help </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">you </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">provide the kind of quality service deserving of customer loyalty. </span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent7">
@@ -70,7 +70,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Heavy Industries</p><br>
-                <img class="card-img-top" src="{{ asset('storage/4 Heavy Industries.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/4 Heavy Industries.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">Whether your business is engaged in </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">Energy, Manufacturing, Chemicals, </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">Materials,</span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;"> Transportation</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">, or </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">Shipping</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">, we will provide comprehensive findings and significant perspectives that are relevant to your growth strategies.<span style="mso-spacerun: yes;">&nbsp;&nbsp; </span></span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent3">
@@ -88,7 +88,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Life Sciences</p><br>
-                <img class="card-img-top" src="{{ asset('storage/5 Life Sciences.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/5 Life Sciences.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt;text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black;">Pharmaceutical and Life Sciences industry succeeds in today&rsquo;s age of digitalization through the implementation of various IT solutions. </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">We offer market studies</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black;"> </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">which will</span><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black;"> open avenues for new products and better practices</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;"> that will significantly improve the quality of life of many.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent4">
@@ -106,7 +106,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Public Sector</p><br>
-                <img class="card-img-top" src="{{ asset('storage/6 Public Sector.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/6 Public Sector.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH; mso-bidi-font-weight: bold;">Monitoring current social, economic, technological</span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-bidi-font-weight: bold;">,</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH; mso-bidi-font-weight: bold;"> and political trends is integral for public service. We provide our clients with relevant data to inform policies, services, campaigns and interventions for our clients in education, government agencies and contractors, real estate and housing, non-profits, and religious organizations. </span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent5">
@@ -125,7 +125,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Media</p><br>
-                <img class="card-img-top" src="{{ asset('storage/7 Media.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/7 Media.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH; mso-bidi-font-weight: bold;">With so many people consuming content through more platforms than ever before, it&rsquo;s no wonder brand marketers are saying, &ldquo;Attention is the new currency.&rdquo; To assists our clients involved in traditional, print and digital media, we provide research solutions for market trends and forecasts, marketing strategies and effectiveness, branding, audience studies, competitor evaluation, and more.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent6">
@@ -143,7 +143,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Retail and Consumer</p><br>
-                <img class="card-img-top" src="{{ asset('storage/8 Retail and Consumer.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/8 Retail and Consumer.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt;text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">Technological revolutions, changing consumer behaviors, and geopolitical relationships have drastically changed the face of the industry. Whether our clients are in Retail and Wholesale, Apparel, Luxury goods, or Food and Beverage, we will create up-to-date and insightful data reports that will help future-proof any business.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent8">
@@ -166,7 +166,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">E-commerce</p><br>
-                <img class="card-img-top" src="{{ asset('storage/1 E-commerce.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/1 E-commerce.jpeg') }}">
                 <p class="MsoNormal mt-2" style="text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12pt;">When you k</span><span style="font-size: 12pt;">now your market</span><span lang="EN-PH" style="font-size: 12pt;">, you&rsquo;ve </span><span style="font-size: 12pt;">set your business</span><span lang="EN-PH" style="font-size: 12pt;"> up</span><span lang="EN-PH" style="font-size: 12pt;"> </span><span lang="EN-PH" style="font-size: 12pt;">to lead, innovate and win</span><span style="font-size: 12pt;">. </span><span lang="EN-PH" style="font-size: 12pt;">With our industry-standard market reports, you&rsquo;ll get an in-depth look at what delights your customers, what advantages you have over your competitors, and what </span><span style="font-size: 12pt;">you can do to capitalize on industry trends.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent1">
@@ -184,7 +184,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Technology</p><br>
-                <img class="card-img-top" src="{{ asset('storage/2 Technology.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/2 Technology.jpeg') }}">
                 <p class="MsoNormal mt-4" style="text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">The </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">New York Times</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> report</span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">ed</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> that </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">tech companies are currently dominating the stock market because they&rsquo;ve become an indispensable facet of our everyday lives.</span><em><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> </span></em><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">We</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">&rsquo;</span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">re here to provide </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">you with </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">valuable </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">market </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">reports </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">on</span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> computer hardware and networking, software, </span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">IT, and </span><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">telecommunications,</span><span lang="EN-PH" style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;"> so your business can capitalize on the monumental opportunities in this industry. </span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent2">
@@ -202,7 +202,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Service Industries</p><br>
-                <img class="card-img-top" src="{{ asset('storage/3 Service Industries.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/3 Service Industries.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">We make sure that our insights can be leveraged to your advantage. We cater to all types of service-based businesses, from financial services to professional services, and everything in between. You can expect premium research </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">reports</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;"> that will help </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">you </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">provide the kind of quality service deserving of customer loyalty. </span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent7">
@@ -220,7 +220,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Heavy Industries</p><br>
-                <img class="card-img-top" src="{{ asset('storage/4 Heavy Industries.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/4 Heavy Industries.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">Whether your business is engaged in </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">Energy, Manufacturing, Chemicals, </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">Materials,</span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;"> Transportation</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">, or </span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black;">Shipping</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">, we will provide comprehensive findings and significant perspectives that are relevant to your growth strategies.<span style="mso-spacerun: yes;">&nbsp;&nbsp; </span></span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent3">
@@ -237,7 +237,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Life Sciences</p><br>
-                <img class="card-img-top" src="{{ asset('storage/5 Life Sciences.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/5 Life Sciences.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt;text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black;">Pharmaceutical and Life Sciences industry succeeds in today&rsquo;s age of digitalization through the implementation of various IT solutions. </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">We offer market studies</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black;"> </span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">which will</span><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black;"> open avenues for new products and better practices</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;"> that will significantly improve the quality of life of many.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent4">
@@ -254,7 +254,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Public Sector</p><br>
-                <img class="card-img-top" src="{{ asset('storage/6 Public Sector.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/6 Public Sector.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH; mso-bidi-font-weight: bold;">Monitoring current social, economic, technological</span><span style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-bidi-font-weight: bold;">,</span><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH; mso-bidi-font-weight: bold;"> and political trends is integral for public service. We provide our clients with relevant data to inform policies, services, campaigns and interventions for our clients in education, government agencies and contractors, real estate and housing, non-profits, and religious organizations. </span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent5">
@@ -272,7 +272,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Media</p><br>
-                <img class="card-img-top" src="{{ asset('storage/7 Media.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/7 Media.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt; text-align: justify; text-justify: inter-ideograph; line-height: 115%; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 115%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH; mso-bidi-font-weight: bold;">With so many people consuming content through more platforms than ever before, it&rsquo;s no wonder brand marketers are saying, &ldquo;Attention is the new currency.&rdquo; To assists our clients involved in traditional, print and digital media, we provide research solutions for market trends and forecasts, marketing strategies and effectiveness, branding, audience studies, competitor evaluation, and more.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent6">
@@ -288,7 +288,7 @@
             <div class="box ml-4 mr-3 mobile-ml">
 
                 <p class="h2 mt-2" style="color:#135040;">Retail and Consumer</p><br>
-                <img class="card-img-top" src="{{ asset('storage/8 Retail and Consumer.jpeg') }}">
+                <img class="card-img-top" src="{{ secure_asset('storage/8 Retail and Consumer.jpeg') }}">
                 <p class="MsoNormal" style="margin-top: 12.0pt;text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span lang="EN-PH" style="font-size: 12.0pt; line-height: 107%; font-family: 'Garamond',serif; color: black; mso-ansi-language: EN-PH;">Technological revolutions, changing consumer behaviors, and geopolitical relationships have drastically changed the face of the industry. Whether our clients are in Retail and Wholesale, Apparel, Luxury goods, or Food and Beverage, we will create up-to-date and insightful data reports that will help future-proof any business.</span></p>
                 <div class="collapse-content">
                     <div class="card-text collapse" id="collapseContent8">

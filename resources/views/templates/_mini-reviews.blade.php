@@ -2,7 +2,7 @@
     <div class="mobile-pl">
         <div class="ml-3 mobile-ml">
 
-            <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
+            <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
             <h6 class="d-inline-block align-bottom">Noel<br>
                 <small style="color:#135040;">Entrepreneur (IL)</small>
             </h6>
@@ -37,7 +37,7 @@
     <div class="mobile-pl">
         <div class="ml-3 mobile-ml">
 
-            <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
+            <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
             <h6 class="d-inline-block align-bottom">Kate<br>
                 <small style="color:#135040;">Beauty Retailer (CA)</small>
             </h6>
@@ -73,7 +73,7 @@
     <div class="mobile-pl">
         <div class="ml-3 mobile-ml">
 
-            <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ asset('storage/profile.JPG') }}" data-holder-rendered="true">
+            <img class="d-inline-block mt-5 rounded-circle" height="50" width="50" src="{{ secure_asset('storage/profile.JPG') }}" data-holder-rendered="true">
             <h6 class="d-inline-block align-bottom">Steven<br>
                 <small style="color:#135040;">Computer Hardware Dealer (WI)</small>
             </h6>

@@ -11,9 +11,9 @@
     <div class="row mb-3">
         <div class="col-md-9 p-0 mt-5 mobile-ml">
             <div class="center">
-                <div><img src="{{ asset('storage/jonathan.jpeg') }}" style="height:200px;width:370px;"></div>
-                <div><img src="{{ asset('storage/austin-distel.jpeg') }}" style="height:200px;width:370px;"></div>
-                <div><img src=" {{ asset('storage/carlos.jpeg') }}" style="height:200px"></div>
+                <div><img src="{{ secure_asset('storage/jonathan.jpeg') }}" style="height:200px;width:370px;"></div>
+                <div><img src="{{ secure_asset('storage/austin-distel.jpeg') }}" style="height:200px;width:370px;"></div>
+                <div><img src=" {{ secure_asset('storage/carlos.jpeg') }}" style="height:200px"></div>
             </div>
 
             <div class="col-md-8 mt-5 ml-5 mobile-ml">
