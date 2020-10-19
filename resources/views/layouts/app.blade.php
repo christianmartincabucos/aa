@@ -17,19 +17,13 @@
     <style>
         @font-face {
             font-family: "Gotham";
-            src: url('{{ asset("fonts/Gotham-Thin.otf" )}}');
-            /* src: url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot"); */
-            /* IE9*/
-            /* src: url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot?#iefix") format("embedded-opentype"), */
-            /* IE6-IE8 */
-            /* url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff2") format("woff2"), */
-            /* chrome firefox */
-            /* url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff") format("woff"), */
-            /* chrome firefox */
-            /* url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.ttf") format("truetype"), */
-            /* chrome firefox opera Safari, Android, iOS 4.2+*/
-            /* url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.svg#Gotham") format("svg"); */
-            /* iOS 4.1- */
+            src: url('{{ secure_asset("fonts/Gotham-Thin.otf" )}}');
+            src: url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot");
+            src: url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.eot?#iefix") format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff2") format("woff2"),
+            url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.woff") format("woff"),
+            url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.ttf") format("truetype"),
+            url("https://db.onlinewebfonts.com/t/edc378fa3251080c5b508b220462efca.svg#Gotham") format("svg");
         }
 
         * {
