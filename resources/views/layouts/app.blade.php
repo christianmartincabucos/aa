@@ -164,7 +164,6 @@
             content: '★ ';
             position: absolute;
         }
-
         .rating>label {
             color: #FFD700
                 /* darkgreen */
