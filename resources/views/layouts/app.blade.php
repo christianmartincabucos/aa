@@ -93,6 +93,10 @@
             color: #135040 !important;
         }
 
+        .green {
+            background-color: #135040 !important;
+        }
+
         @media only screen and (max-width: 600px) {
             .border-left {
                 border: 0 !important;
@@ -235,7 +239,6 @@
 <body class="hold-transition layout-top-nav layout-navbar-fixed">
     <div class="wrapper">
 
-        <a id="button"></a>
 
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
@@ -260,7 +263,7 @@
                             <a href="{{ url('categories') }}" class="nav-link font-weight-bold">Categories</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/') }}#about" class="nav-link font-weight-bold">About</a>
+                            <a href="{{ url('about') }}" class="nav-link font-weight-bold">About</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('/') }}#reviews-page" class="nav-link font-weight-bold">Reviews</a>
@@ -275,7 +278,7 @@
                 <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
                     <!-- Messages Dropdown Menu -->
                     <li class="nav-item">
-                        <button type="button" class="btn btn-sm bg-dark btn-flat">Contact</button>
+                        <a href="#contact" class="btn btn-sm bg-dark btn-flat">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -291,8 +294,8 @@
                         <div class="row">
                             <div class="col-md-8 offset-md-1" style="margin-top: 2%">
                                 <div class="box">
-                                    <h3 class="ml-4">Anthony & Associates</h3>
-                                    <h4 class="ml-4">Research Market & Development</h4>
+                                    <h3 class="ml-3">Anthony & Associates</h3>
+                                    <h4 class="ml-3">Research Market & Development</h4>
                                 </div>
                             </div>
 
@@ -1552,34 +1555,163 @@
                 </section>
             </div>
         </div>
-        <script src="{{ secure_asset('js/app.js') }}"></script>
-        <script src="{{ secure_asset('js/jquery.simplePagination.js') }}"></script>
-        <!-- <script>
-            jQuery(function($) {
-                var items = $("#content #page-content");
+    </div>
+    <footer class="page-footer text-center text-md-left green pt-0">
 
-                var numItems = items.length;
-                var perPage = 7;
+        <div style="background-color:#edecea;color:#000000;">
+            <div class="container">
+
+                <!-- Grid row -->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <!-- <div class="col-md-6 col-lg-5 text-center text-md-left mb-md-0">
+                        <h6 class="mb-4 mb-md-0">Get connected with us on social networks!</h6>
+                    </div> -->
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <!-- <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a class="p-2 m-2 fa-lg fb-ic ml-0">
+                            <i class="fab fa-facebook-f mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg gplus-ic">
+                            <i class="fab fa-google-plus-g mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg li-ic">
+                            <i class="fab fa-linkedin-in mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg ins-ic">
+                            <i class="fab fa-instagram mr-lg-4"> </i>
+                        </a>
+                    </div> -->
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+
+                <!-- First column -->
+                <!-- <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Company name</strong>
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+                </div> -->
+                <!-- First column -->
+
+                <!-- Second column -->
+                <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-5">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Products</strong>
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bootstrap Angular</a>
+                    </p>
+                </div> -->
+                <!-- Second column -->
+
+                <!-- Third column -->
+                <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div> -->
+                <!-- Third column -->
+
+                <!-- Fourth column -->
+                <div class="col-md-7 col-lg-6 col-xl-6" id="contact">
+                    <h6 class="spacing font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> 140 Broadway 46th flr
+                        Lower Manhattan New York, NY 10005</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> contact@aa-rmd.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 1-800-448-5849</p>
+                </div>
+                <!-- Fourth column -->
+
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <div class="container-fluid">
+                © 2020 Copyright: <a href="http://aamarket.herokuapp.com/" target="_blank"> Anthony&Associates RMD
+                </a>
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <script src="{{ secure_asset('js/app.js') }}"></script>
+    <script src="{{ secure_asset('js/jquery.simplePagination.js') }}"></script>
+    <!-- <script>
+        jQuery(function($) {
+            var items = $("#content #page-content");
+
+            var numItems = items.length;
+            var perPage = 7;
 
 
-                items.slice(perPage).hide();
+            items.slice(perPage).hide();
 
-                $(".pagination").pagination({
-                    items: numItems,
-                    itemsOnPage: perPage,
-                    cssStyle: "light-theme",
+            $(".pagination").pagination({
+                items: numItems,
+                itemsOnPage: perPage,
+                cssStyle: "light-theme",
 
-                    onPageClick: function(pageNumber) {
-                        var showFrom = perPage * (pageNumber - 1);
-                        var showTo = showFrom + perPage;
+                onPageClick: function(pageNumber) {
+                    var showFrom = perPage * (pageNumber - 1);
+                    var showTo = showFrom + perPage;
 
-                        items.hide()
-                            .slice(showFrom, showTo).show();
-                    }
-                });
+                    items.hide()
+                        .slice(showFrom, showTo).show();
+                }
             });
-        </script> -->
-        @stack('js')
+        });
+    </script> -->
+    @stack('js')
 </body>
 
 </html>

@@ -8,7 +8,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8 offset-md-1 my-5 mobile-ml col-sm-12">
-            <div class="ml-4">
+            <div class="ml-3">
 
                 <h2 class="text-green my-3">Sources</h2>
                 <p>Merle, Renae, and Aaron Gregg. <a href="https://www.washingtonpost.com/lifestyle/style/chase-to-open-hundreds-of-offices-in-us-even-as-rivals-abandon-bank-branches/2018/04/22/002e7318-441d-11e8-8569-26fda6b404c7_story.html?outputType=amp">“Chase to Open Hundreds of Offices in U.S. Even as Rivals Abandon Bank Branches.”</a> The Washington Post. WP Company, April 22, 2018. </p>
@@ -35,8 +35,7 @@
 
 
                 <p>Eavis, Peter, and Steve Lohr. <a href="https://www.nytimes.com/2020/08/19/technology/big-tech-business-domination.html">“Big Tech's Domination of Business Reaches New Heights.”</a> The New York Times. The New York Times, August 19, 2020.</p>
-                <p><a href="https://www.abbott.com/corpnewsroom/product-and-innovation/freestyle-libre-2-now-available-in-us.html?fbclid=IwAR10Dz6468rb8e49o8zyiwZK3jKmI-coyGeA0TVgmYIvFwkm-ibegqrVEtI
-">“FreeStyle Libre 2: Now Available in U.S.”</a> Abbot, July 31, 2020.</p>
+                <p><a href="https://www.abbott.com/corpnewsroom/product-and-innovation/freestyle-libre-2-now-available-in-us.html?fbclid=IwAR10Dz6468rb8e49o8zyiwZK3jKmI-coyGeA0TVgmYIvFwkm-ibegqrVEtI">“FreeStyle Libre 2: Now Available in U.S.”</a> Abbot, July 31, 2020.</p>
 
                 <a href="https://www.cargill.com/about/navigating-change?fbclid=IwAR3IaamIRuvukPrZKj6sRXgOYF2Ux13uC1KxAWc4rajPJncCtg3VIzbQpms">“The Global Food Economy Is Shifting. Market Forces and Demographic Trends Are Continuously Influencing Supply and Demand. Consumers Are Voting with Their Values on a Wide Range of Quickly Emerging Food Issues. Anticipating These Changing Complexities Is a Crucial Part of How We Help Our Customers Succeed.”</a> Cargill. Accessed October 12, 2020.</p>
 
@@ -77,6 +76,8 @@
                 <p>Whiteman, Lou. <a href="https://www.fool.com/amp/investing/2019/07/29/heres-lockheed-martins-next-big-growth-opportunity.aspx?fbclid=IwAR3xjTLFy6dQx6CQQzVIjc_OygKcKuNPfYDIG4IcGE0hOu_aFLIUQtA6Q-Q">“Here's Lockheed Martin's Next Big Growth Opportunity.”</a> The Motley Fool. The Motley Fool, July 30, 2019.</p>
             </div>
         </div>
+
     </div>
+    <div class="card rounded-0 mt-5" style="background-color:#135040;height:50px;"></div>
 </div>
 @endsection

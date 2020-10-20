@@ -17,11 +17,14 @@
             </div>
 
             <!-- <div class="col-md-9 mt-5 ml-5 mobile-ml"> -->
-                <p class="font-weight-bold ml-5 pl-5 mobile-ml mobile-pl">We offer insights regarding customer behavior,market viability <br>
-                    of products and services, competitors monitoring, and <br>
-                    industry trends. These can be applied to product<br> development, customer service, marketing campaigns, <br>
+                <p class="font-weight-bold mx-5 mt-3 px-5 mobile-ml mobile-pl">
+                    We offer insights regarding customer behavior,market viability
+                    of products and services, competitors monitoring, and
+                    industry trends. These can be applied to product development, customer service, marketing campaigns,
                     planning growth strategies, and more. </p>
-                <p class="mt-3 ml-5 pl-5 mobile-ml mobile-pl"><small><a href="#about" class="text-muted">More about A&A</a></small></p>
+                <p class="mt-3 ml-5 pl-5 mobile-ml mobile-pl">
+                    <small><a href="#about" class="text-muted">More about A&A</a></small>
+                </p>
             <!-- </div>
         </div>
         <div class="col-md-9 mobile-ml"> -->

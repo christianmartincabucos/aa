@@ -163,7 +163,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-9 offset-md-1" style="margin-top: 2%">
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="ecommerce">
 
                 <p class="h2 mt-2" style="color:#135040;">E-commerce</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/1 E-commerce.jpeg') }}">
@@ -181,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="technology">
 
                 <p class="h2 mt-2" style="color:#135040;">Technology</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/2 Technology.jpeg') }}">
@@ -194,12 +194,12 @@
                         <p class="MsoNormal mt-2" style="text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;"><span style="font-size: 12pt; line-height: 115%; font-family: Garamond, serif;">Apple is now considered the world&rsquo;s first $2 trillion company. This comes as a result of shifting their priorities from hardware to software services which includes iTunes, App Store, Apple Pay and AppleCare. Adding to this is the release of their highly-anticipated 5G iPhone. Their beloved products have been designed with a meticulous focus on the needs of their users, and knowing their market there&rsquo;s more opportunities for growth in a world running on smartphones. </span></p>
                         <p class="MsoNormal mt-2" style="text-align: justify; text-justify: inter-ideograph; vertical-align: baseline;">&nbsp;</p>
                     </div>
-                    <a class="btn btn-flat p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent" 2 aria-expanded="false" aria-controls="collapseContent"></a>
+                    <a class="btn btn-flat p-1 my-1 mr-0 mml-1 collapsed" data-toggle="collapse" href="#collapseContent2" 2 aria-expanded="false" aria-controls="collapseContent"></a>
 
                 </div>
             </div>
 
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="service">
 
                 <p class="h2 mt-2" style="color:#135040;">Service Industries</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/3 Service Industries.jpeg') }}">
@@ -217,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="heavy">
 
                 <p class="h2 mt-2" style="color:#135040;">Heavy Industries</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/4 Heavy Industries.jpeg') }}">
@@ -234,7 +234,7 @@
                 </div>
             </div>
 
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="life">
 
                 <p class="h2 mt-2" style="color:#135040;">Life Sciences</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/5 Life Sciences.jpeg') }}">
@@ -251,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="public">
 
                 <p class="h2 mt-2" style="color:#135040;">Public Sector</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/6 Public Sector.jpeg') }}">
@@ -269,7 +269,7 @@
                 </div>
             </div>
 
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="media">
 
                 <p class="h2 mt-2" style="color:#135040;">Media</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/7 Media.jpeg') }}">
@@ -285,7 +285,7 @@
 
                 </div>
             </div>
-            <div class="box ml-4 mr-3 mobile-ml">
+            <div class="box ml-4 mr-3 mobile-ml" id="retail">
 
                 <p class="h2 mt-2" style="color:#135040;">Retail and Consumer</p><br>
                 <img class="card-img-top" src="{{ secure_asset('storage/8 Retail and Consumer.jpeg') }}">

@@ -22,6 +22,9 @@ Route::get('/categories', function () {
 Route::get('/references', function () {
     return view('templates.references');
 });
+Route::get('/about', function () {
+    return view('templates.about');
+});
 
 Auth::routes();
 
